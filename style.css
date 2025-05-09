@@ -1,0 +1,267 @@
+:root {
+    --primary: #363062;
+    --secondary: #9AD0C2;
+    --accent: #ED5AB3;
+    --bg-light: #dedede;
+    --font-main: 'Open Sans', sans-serif;
+    --font-secondary: 'Comic Sans MS';
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-main);
+}
+
+.wrepper {
+    width: 1100px;
+    margin: auto;
+    position: relative;
+}
+
+.logo a {
+    font-size: 50px;
+    font-weight: bold;
+    float: left;
+    font-family: courier;
+    color: var(--primary);
+}
+
+.menu {
+    float: right;
+}
+
+nav {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    line-height: 80px;
+    position: sticky;
+    top: 0;
+    background: #ffffff;
+    z-index: 1;
+    border-bottom: 1px solid var(--primary);
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 16px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: var(--accent);
+}
+
+section {
+    margin: auto;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.kolom {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.kolom .deskripsi {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: var(--font-secondary);
+    color: var(--primary);
+}
+
+h2 {
+    font-family: var(--font-secondary);
+    font-weight: 800;
+    font-size: 45px;
+    margin-bottom: 20px;
+    color: var(--primary);
+    width: 100%;
+    line-height: 50px;
+}
+
+a.tbl-biru {
+    background: var(--secondary);
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 15px 20px;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+a.tbl-biru:hover {
+    background: var(--accent);
+    text-decoration: none;
+}
+
+a.tbl-pink {
+    background: var(--accent);
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 15px 20px;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+a.tbl-pink:hover {
+    background: var(--secondary);
+    text-decoration: none;
+}
+
+p {
+    margin: 10px 0;
+    padding: 10px 0;
+}
+
+.tengah {
+    text-align: center;
+    width: 100%;
+}
+
+.tutor-list,
+.partners-list {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.kartu-tutor,
+.kartu-partners {
+    width: 20%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.kartu-tutor img,
+.kartu-partners img {
+    width: 80%;
+    border-radius: 50%;
+}
+
+.kartu-tutor p,
+.kartu-partners p {
+    font-family: var(--font-secondary);
+    font-weight: 800;
+    font-size: 25px;
+    color: var(--primary);
+}
+
+#contact {
+    background: var(--bg-light);
+    padding: 50px 0;
+}
+
+.footer {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.footer-section {
+    width: 20%;
+    margin: 0 auto;
+}
+
+h3 {
+    font-family: var(--font-secondary);
+    font-weight: 800;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: var(--primary);
+    width: 100%;
+    line-height: 50px;
+}
+
+#copyright {
+    text-align: center;
+    width: 100%;
+    padding: 50px 0;
+    margin-top: 50px;
+}
+
+@media screen and (max-width: 991.98px) {
+    .wrepper {
+        width: 90%;
+    }
+
+    .logo a {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav .menu {
+        width: 100%;
+        margin: 0;
+    }
+
+    nav .menu ul {
+        text-align: center;
+        margin: auto;
+        line-height: 60px;
+    }
+
+    nav .menu li {
+        display: inline-block;
+    }
+
+    section {
+        display: block;
+    }
+
+    section img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .kartu-tutor,
+    .kartu-partners {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .kartu-tutor,
+    .kartu-partners,
+    .footer-section {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    nav ul li {
+        display: block;
+        padding: 10px 0;
+    }
+}
